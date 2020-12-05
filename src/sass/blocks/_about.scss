@@ -1,14 +1,24 @@
 .about {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    // position: relative;
+    // padding-top: 120px;
+    // padding-bottom: 60px;
     min-height: 100vh;
+    &-wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        // flex-direction: column;
+        // justify-content: center;
+    }
     &-grid {
-        height: 600px;
         display: grid;
-        grid-template: 260px 1fr / 1fr 2fr;
+        grid-template: repeat(2, minmax(auto, 1fr)) / 1fr 2fr;
         gap: 40px 70px;
         &__photo {
             grid-row: 1/3;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -41,6 +51,7 @@
 
 .skills {
     &-grid {
+        max-height: 70%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 116px);

@@ -2,7 +2,13 @@
     min-height: 100vh;
     position: relative;
     background: url('../img/main_bg.jpg') no-repeat 50% / cover;
-    padding-top: 205px;
+    // padding-top: 205px;
+    &-wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     &__title {
         width: 535px;
         margin-top: 10px;
