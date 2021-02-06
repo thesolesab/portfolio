@@ -1,19 +1,6 @@
 .resume {
     padding-top: 120px;
     min-height: 100vh;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;
@@ -25,7 +12,7 @@
             position: relative;
             padding-left: 35px;
             &:before {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 15px;
                 height: 15px;
@@ -41,7 +28,7 @@
             li {
                 position: relative;
                 &:after {
-                    content: '';
+                    content: "";
                     width: 1px;
                     height: calc(100% + 16px);
                     position: absolute;
@@ -55,7 +42,7 @@
     &__item {
         position: relative;
         &:before {
-            content: '';
+            content: "";
             height: 1px;
             width: 43px;
             position: absolute;
